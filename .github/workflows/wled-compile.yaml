@@ -31,7 +31,7 @@ jobs:
         npm install
         echo '[env:custom_build]' >>platformio.ini
         echo 'extends = env:esp32dev_audioreactive' >>platformio.ini
-        echo 'build_flags = ${env:esp32dev_audioreactive.build_flags} -D LEDPIN=2 -D CLIENT_SSID='\''"SWEET ZONE"'\'' -D CLIENT_PASS='\''"@a1900!@#"'\'' -D WLED_AP_SSID='\''"SWEET LED"'\'' -D WLED_AP_PASS='\''"sweetled1234"'\'' -D USERMOD_AUDIOREACTIVE -D USERMOD_AUTO_SAVE' >>platformio.ini
+        echo 'build_flags = ${env:esp32dev_audioreactive.build_flags} -D LEDPIN=2 -D CLIENT_SSID='\''"SWEET ZONE"'\'' -D CLIENT_PASS='\''"@a1900!@#"'\'' -D WLED_AP_SSID='\''"SWEET-LED"'\'' -D WLED_AP_PASS='\''"sweetled1234"'\'' -D USERMOD_AUDIOREACTIVE -D USERMOD_AUTO_SAVE' >>platformio.ini
         echo 'lib_deps = ' >>platformio.ini
         echo '  ${env:esp32dev_audioreactive.lib_deps}' >>platformio.ini
         echo '  https://github.com/blazoncek/arduinoFFT.git' >>platformio.ini
